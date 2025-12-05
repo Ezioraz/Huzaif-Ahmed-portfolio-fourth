@@ -105,11 +105,11 @@ export const config = {
     ],
     experiences: [
         {
-            position: "Frontend Developer",
-            company: "SelectSkillSet",
-            period: "2024 - Present",
+            position: "Cloud Advisor 2",
+            company: "Sherweb",
+            period: "2023 - Present",
             location: "Remote",
-            description: "Developing modern, responsive frontend applications with focus on user experience and performance. Working with cutting-edge technologies to build scalable web solutions.",
+            description: "Engineering secure and scalable cloud environments, optimizing workloads, and automating deployment pipelines to ensure consistent, high-performance delivery.",
             responsibilities: [
                 "Building responsive and interactive user interfaces using React and Next.js",
                 "Implementing modern UI/UX designs with TailwindCSS and Framer Motion",
@@ -138,14 +138,14 @@ export const config = {
         {
             icon: <FaGithub className="w-5 h-5" />,
             label: "GitHub",
-            value: "@huzaifahmedz",
-            link: `https://github.com/huzaifahmedz`
+            value: "@Javid",
+            link: `https://github.com/Ezioraz`
         },
         {
             icon: <HiMail className="w-5 h-5" />,
             label: "Email",
-            value: "dev.huzaif@gmail.com",
-            link: "mailto:dev.huzaif@gmail.com"
+            value: "ezioraz@gmail.com",
+            link: "mailto:ezioraz@gmail.com"
         },
         {
             icon: <FaMapPin className="w-5 h-5" />,
