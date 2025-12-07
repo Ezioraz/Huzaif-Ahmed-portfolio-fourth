@@ -61,7 +61,7 @@ export const ProjectCard = ({ project, index }) => (
                         rel="noopener noreferrer"
                         className="flex items-center gap-2"
                     >
-                        Live Demo
+                        GitHub
                         <FaExternalLinkAlt className="w-3 h-3" />
                     </a>
                 </Button>

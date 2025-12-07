@@ -5,136 +5,227 @@ export const config = {
     developer: {
         name: "Javid",
     },
+
     social: {
         github: "huzaifahmedz",
         discord: "#"
     },
+
     NAV_ITEMS: [
         { href: '/projects', label: 'Projects' },
         { href: '/contact', label: 'Contact' }
     ],
-    recentTracks: true, // Enable/disable Spotify recent tracks
+
+    recentTracks: true,
+
+    // -------------------------
+    //       PROJECTS (DevOps)
+    // -------------------------
     projects: [
+
+        // ⭐ NEW MAIN PROJECT ADDED HERE
         {
             id: 1,
-            title: "AI-Powered Code Review Assistant",
-            description: "An intelligent code review platform that uses machine learning to analyze pull requests, detect bugs, suggest optimizations, and enforce coding standards. Features real-time collaboration, automated testing integration, and comprehensive security scanning.",
-            image: "/projects/project-1.webp",
-            technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL", "Docker"],
-            github: "#",
-            demo: "#"
+            title: "Optic Booking Platform (Cloud-Ready Full-Stack Application)",
+            description:
+                "A production-ready booking platform for optical stores, built using scalable cloud architecture, containerized services, CI/CD automation, and secure backend APIs. Designed to demonstrate real AWS deployment patterns, IaC provisioning, and DevOps workflows.",
+            image: "/projects/project-6.png",
+            technologies: [
+                "AWS", "Docker", "Node.js", "Next.js", "MongoDB",
+                "Terraform", "GitHub Actions", "Linux"
+            ],
+            github: "https://github.com/Ezioraz/optic-booking-platform",
+            demo: "https://github.com/Ezioraz/optic-booking-platform",
+
+            // Diagram images you generated — place these in /public/projects/diagrams/
+            diagrams: [
+                "/projects/diagrams/optic-architecture-1.png",
+                "/projects/diagrams/optic-architecture-2.png"
+            ]
         },
+
         {
             id: 2,
-            title: "Real-time Collaborative Whiteboard",
-            description: "A next-generation collaborative whiteboard platform with infinite canvas, real-time synchronization, and advanced drawing tools. Supports video conferencing, screen sharing, and export to multiple formats. Built for remote teams and educators.",
-            image: "/projects/project-2.webp",
-            technologies: ["TypeScript", "WebRTC", "Socket.io", "Canvas API", "Node.js", "Redis"],
+            title: "AWS CI/CD Pipeline with Jenkins, Docker & ECR",
+            description:
+                "End-to-end CI/CD pipeline using Jenkins, Docker, ECR, and EC2. Includes automated build stages, image scanning, tagging, artifact push to ECR, and zero-downtime deployment to EC2.",
+            image: "/projects/devops-1.webp",
+            technologies: ["Jenkins", "Docker", "AWS ECR", "EC2", "GitHub", "Linux"],
             github: "#",
             demo: "#"
         },
+
         {
             id: 3,
-            title: "Blockchain Voting System",
-            description: "A secure, transparent, and decentralized voting platform built on Ethereum. Features smart contract-based voting, anonymous ballots, real-time result tracking, and immutable audit trails. Ensures election integrity through cryptographic verification.",
-            image: "/projects/project-3.webp",
-            technologies: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS", "MetaMask"],
+            title: "EKS Kubernetes Cluster with Terraform (IaC)",
+            description:
+                "Provisioned a production-grade EKS cluster using Terraform modules. Includes VPC creation, node groups, IAM roles, autoscaling, and deployment of workloads via kubectl.",
+            image: "/projects/devops-2.webp",
+            technologies: ["Terraform", "EKS", "AWS VPC", "IAM", "Kubernetes", "Helm"],
             github: "#",
             demo: "#"
         },
+
         {
             id: 4,
-            title: "Cloud Infrastructure Dashboard",
-            description: "A comprehensive cloud management platform for monitoring, managing, and optimizing multi-cloud infrastructure. Features real-time metrics, cost analysis, automated scaling, and security compliance monitoring across AWS, Azure, and GCP.",
-            image: "/projects/project-4.webp",
-            technologies: ["Go", "Kubernetes", "Grafana", "Prometheus", "Terraform", "React"],
+            title: "Multi-Cloud Monitoring Stack (Prometheus + Grafana)",
+            description:
+                "Implemented centralized monitoring with Prometheus scraping metrics from Kubernetes, EC2, Docker containers, and Linux servers. Built custom Grafana dashboards and alerting.",
+            image: "/projects/devops-3.webp",
+            technologies: ["Prometheus", "Grafana", "Alertmanager", "Linux", "Docker"],
             github: "#",
             demo: "#"
         },
+
         {
             id: 5,
-            title: "Neural Network Visualizer",
-            description: "An interactive web application for visualizing, training, and experimenting with neural networks. Features drag-and-drop architecture builder, real-time training visualization, model comparison tools, and export capabilities for production deployment.",
-            image: "/projects/project-5.webp",
-            technologies: ["Python", "TensorFlow.js", "D3.js", "Next.js", "WebGL", "TypeScript"],
+            title: "AWS Secure Infrastructure with VPC, ALB, Auto Scaling",
+            description:
+                "Designed a secure, high-availability AWS architecture using public/private subnets, NAT Gateway, ALB, Auto Scaling Groups, and CloudWatch alarms. Implemented full IAM hardening.",
+            image: "/projects/devops-4.webp",
+            technologies: ["AWS VPC", "EC2", "ALB", "ASG", "IAM", "CloudWatch"],
+            github: "#",
+            demo: "#"
+        },
+
+        {
+            id: 6,
+            title: "Backup & Disaster Recovery Automation",
+            description:
+                "Automated EBS snapshot lifecycle, AMI creation, S3 backup workflows, and monitoring alerts using Bash/Python. Reduced manual backup effort by 70%.",
+            image: "/projects/devops-5.webp",
+            technologies: ["AWS S3", "EBS", "Python", "Bash", "CloudWatch", "Lifecycle Manager"],
             github: "#",
             demo: "#"
         }
- 
     ],
+
+    // -------------------------
+    //          SKILLS
+    // -------------------------
     skills: [
         {
-            title: "Frontend",
+            title: "Cloud & DevOps",
             icon: <HiCode />,
-            description: "Modern web interfaces",
+            description: "Cloud platforms, orchestration & deployment automation",
             bgClass: "bg-blue-500/10",
             iconClass: "text-blue-500",
             skills: [
-                { name: "Next.js 15", level: "Advanced", hot: true },
-                { name: "React", level: "Advanced" },
-                { name: "TailwindCSS", level: "Expert" },
-                { name: "JavaScript", level: "Advanced" },
-                { name: "Framer Motion", level: "Intermediate" }
+                { name: "AWS (EC2, VPC, IAM, EKS, S3)", level: "Advanced" },
+                { name: "Docker", level: "Advanced" },
+                { name: "Kubernetes", level: "Intermediate", hot: true },
+                { name: "Terraform", level: "Intermediate" },
+                { name: "CI/CD (Jenkins)", level: "Advanced" }
             ]
         },
         {
-            title: "Backend",
+            title: "Systems & Backend",
             icon: <HiDatabase />,
-            description: "Server & Database",
+            description: "Linux, networking, scripting & backend fundamentals",
             bgClass: "bg-emerald-500/10",
             iconClass: "text-emerald-500",
             skills: [
-                { name: "Node.js", level: "Advanced", hot: true },
-                { name: "MongoDB", level: "Advanced" },
-                { name: "Express.js", level: "Advanced", hot: true }
+                { name: "Linux Administration", level: "Advanced" },
+                { name: "Networking (DNS, VPN, Routing)", level: "Advanced" },
+                { name: "Python", level: "Intermediate" },
+                { name: "Bash", level: "Advanced" }
             ]
         },
         {
-            title: "Programs & Tools",
+            title: "Tools & Platforms",
             icon: <HiCube />,
-            description: "Development & Productivity Tools",
+            description: "Operational, monitoring, and productivity tools",
             bgClass: "bg-orange-500/10",
             iconClass: "text-orange-500",
             skills: [
-                { name: "VS Code", level: "Expert", hot: true },
-                { name: "Postman", level: "Advanced" },
-                { name: "Photoshop", level: "Intermediate" },
-                { name: "Git", level: "Advanced" }
+                { name: "Git", level: "Advanced" },
+                { name: "Grafana", level: "Intermediate" },
+                { name: "Prometheus", level: "Intermediate" },
+                { name: "Nginx / Apache", level: "Intermediate" }
             ]
         }
     ],
+
+    // -------------------------
+    //       EXPERIENCE
+    // -------------------------
     experiences: [
         {
-            position: "Cloud Advisor 2",
+            position: "Technical Advisor II – Cloud & Infrastructure",
             company: "Sherweb",
-            period: "2023 - Present",
+            period: "2023 - 2025",
             location: "Remote",
-            description: "Engineering secure and scalable cloud environments, optimizing workloads, and automating deployment pipelines to ensure consistent, high-performance delivery.",
+            description:
+                "Designed, deployed, and optimized AWS infrastructure, automated operational tasks, and supported production environments with Kubernetes, CI/CD, and monitoring.",
             responsibilities: [
-                "Building responsive and interactive user interfaces using React and Next.js",
-                "Implementing modern UI/UX designs with TailwindCSS and Framer Motion",
-                "Optimizing application performance and ensuring cross-browser compatibility",
-                "Collaborating with design and backend teams to deliver high-quality features"
+                "Designed and maintained AWS environments including VPCs, routing, IAM, load balancers, and Auto Scaling",
+                "Built and optimized Docker images and deployed workloads on EKS",
+                "Troubleshot pod failures, networking issues, IAM errors, and rollout failures on Kubernetes",
+                "Improved CI/CD pipelines in Jenkins and integrated Docker/ECR workflows",
+                "Automated operational tasks using Bash/Python, reducing manual effort",
+                "Developed CloudWatch monitoring and alerting, reducing MTTR by 40%",
+                "Implemented Terraform for IaC, improving reliability and reducing cloud costs"
             ],
-            technologies: ["React", "Next.js", "TailwindCSS", "JavaScript", "Framer Motion", "TypeScript"]
+            technologies: ["AWS", "EKS", "Docker", "Jenkins", "Terraform", "Linux", "CloudWatch"]
         },
+
         {
-            position: "Full Stack Developer",
-            company: "Tekisky",
-            period: "2023 - 2024",
-            location: "Remote",
-            description: "Developed and maintained full-stack web applications, working on both frontend and backend systems. Collaborated with cross-functional teams to deliver robust software solutions.",
+            position: "Cloud & Systems Engineer",
+            company: "Supportmena Technologies",
+            period: "2021 - 2023",
+            location: "Dubai, UAE",
+            description:
+                "Managed AWS workloads, Linux servers, application hosting, migrations, and cloud networking across multiple customer environments.",
             responsibilities: [
-                "Developed and maintained full-stack web applications using React, Node.js, and MongoDB",
-                "Implemented RESTful APIs and integrated third-party services",
-                "Built responsive user interfaces and optimized application performance",
-                "Worked on database design and backend architecture"
+                "Designed AWS architectures including EC2, ALB, Auto Scaling, S3, Route53, ACM",
+                "Configured VPCs with subnets, routing tables, NACLs, and NAT gateways",
+                "Hosted and optimized applications on Linux using Apache/Nginx",
+                "Led cloud migrations including DNS, email, storage & workloads",
+                "Implemented IAM best practices including MFA and key rotation",
+                "Managed backup strategies using snapshots & lifecycle policies",
+                "Performed RCA on cloud server, SSL, DNS, and network issues"
             ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "MERN Stack"]
+            technologies: ["AWS", "Linux", "Nginx", "Route53", "EC2", "IAM"]
+        },
+
+        {
+            position: "Senior Analyst – Infrastructure Support",
+            company: "HCL Technologies",
+            period: "2019 - 2021",
+            location: "Chennai, India",
+            description:
+                "Supported enterprise infrastructure including DNS, AD, VPN, virtualization, OS troubleshooting, and automation workflows.",
+            responsibilities: [
+                "Troubleshot DNS, DHCP, Active Directory, VPN, and OS issues",
+                "Automated deployments and remediation tasks using PowerShell & SCCM",
+                "Managed Windows/Linux servers, GPO, and patching",
+                "Resolved issues across Exchange, Citrix, and virtualization platforms",
+                "Performed RCA for system, network, and application failures"
+            ],
+            technologies: ["Active Directory", "Windows Server", "Linux", "VPN", "PowerShell", "SCCM"]
+        },
+
+        {
+            position: "Technical Support Engineer",
+            company: "Sitel India",
+            period: "2017 - 2019",
+            location: "Chennai, India",
+            description:
+                "Provided L1/L2 support for enterprise systems, solving connectivity, networking, and customer-facing issues under strict SLAs.",
+            responsibilities: [
+                "Resolved technical issues related to connectivity, system setup, and user accounts",
+                "Diagnosed network issues involving DNS, TCP/IP, routing, and VPN",
+                "Supported OS troubleshooting and user environment setup",
+                "Achieved consistently high SLA and customer satisfaction metrics"
+            ],
+            technologies: ["DNS", "TCP/IP", "VPN", "Networking", "Windows", "Linux"]
         }
     ],
+
+    // -------------------------
+    //       CONTACT
+    // -------------------------
     contactInfo: [
-     
         {
             icon: <FaGithub className="w-5 h-5" />,
             label: "GitHub",
@@ -154,4 +245,4 @@ export const config = {
             link: null
         }
     ]
-}
+};
