@@ -16,14 +16,14 @@ const SectionTitle = () => (
         <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
             <div className="space-y-4 max-w-2xl">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary tracking-tight">
-                    Featured Work & Projects
+                    Devops & Automation Projects
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    A curated selection of my professional work and personal projects,
-                    showcasing expertise in{' '}
-                    <span className="text-primary">full-stack development</span>,{' '}
-                    <span className="text-primary">UI/UX design</span>, and{' '}
-                    <span className="text-primary">cloud architecture</span>.
+                    A curated selection of my professional work and hands-on engineering projects,
+                    highlighting expertise{' '}
+                    <span className="text-primary">cloud infrastructure</span>,{' '}
+                    <span className="text-primary">DevOps automation</span>, and{' '}
+                    <span className="text-primary">scalable system design</span>.
                 </p>
             </div>
 
@@ -56,7 +56,7 @@ const SectionTitle = () => (
             </div>
             <div className="w-px h-8 sm:h-10 bg-primary/10 flex-shrink-0" />
             <div className="space-y-1 flex-shrink-0">
-                <span className="text-xl sm:text-2xl font-bold text-primary">3+</span>
+                <span className="text-xl sm:text-2xl font-bold text-primary">8+</span>
                 <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">
                     Years Experience
                 </p>
