@@ -7,7 +7,7 @@ export const config = {
     },
 
     social: {
-        github: "huzaifahmedz",
+        github: "Ezioraz",
         discord: "#"
     },
 
@@ -46,58 +46,38 @@ export const config = {
 
         {
             id: 2,
-            title: "AWS CI/CD Pipeline with Jenkins, Docker & ECR",
+            title: "AWS Serverless Event Automation (Lambda + S3 + SNS)",
             description:
-                "End-to-end CI/CD pipeline using Jenkins, Docker, ECR, and EC2. Includes automated build stages, image scanning, tagging, artifact push to ECR, and zero-downtime deployment to EC2.",
-            image: "/projects/devops-1.webp",
+                "Built an AWS serverless event-driven automation pipeline using S3, Lambda (Python), SNS, and CloudWatch, fully provisioned with Terraform and optionally deployed via GitHub Actions CI/CD.",
+            image: "/projects/project-7.jpg",
             technologies: ["Jenkins", "Docker", "AWS ECR", "EC2", "GitHub", "Linux"],
-            github: "#",
-            demo: "#"
+            github: "https://github.com/Ezioraz/AWS-Serverless-Event-Automation-Lambda-S3-SNS-CloudWatch-",
+            demo: "https://github.com/Ezioraz/AWS-Serverless-Event-Automation-Lambda-S3-SNS-CloudWatch-"
         },
 
         {
             id: 3,
-            title: "EKS Kubernetes Cluster with Terraform (IaC)",
+            title: "Python Flask CI/CD Pipeline",
             description:
-                "Provisioned a production-grade EKS cluster using Terraform modules. Includes VPC creation, node groups, IAM roles, autoscaling, and deployment of workloads via kubectl.",
-            image: "/projects/devops-2.webp",
+                "This project demonstrates a Python Flask web application integrated with a CI/CD pipeline using GitHub Actions. It showcases how to automate application testing and build workflows using modern DevOps practices.",
+            image: "/projects/project-8.png",
             technologies: ["Terraform", "EKS", "AWS VPC", "IAM", "Kubernetes", "Helm"],
-            github: "#",
-            demo: "#"
+            github: "https://github.com/Ezioraz/python-flask-cicd",
+            demo: "https://github.com/Ezioraz/python-flask-cicd"
         },
 
         {
             id: 4,
-            title: "Multi-Cloud Monitoring Stack (Prometheus + Grafana)",
+            title: "DevOps CI/CD Canary App",
             description:
-                "Implemented centralized monitoring with Prometheus scraping metrics from Kubernetes, EC2, Docker containers, and Linux servers. Built custom Grafana dashboards and alerting.",
-            image: "/projects/devops-3.webp",
+                "Canary deployment allows a new application version to be exposed to a small subset of users first. Based on monitoring and validation results, the release is either promoted to full production or rolled back..",
+            image: "/projects/project-9.png",
             technologies: ["Prometheus", "Grafana", "Alertmanager", "Linux", "Docker"],
-            github: "#",
-            demo: "#"
+            github: "https://github.com/Ezioraz/devops-ci-cd-canary-app",
+            demo: "https://github.com/Ezioraz/devops-ci-cd-canary-app"
         },
 
-        {
-            id: 5,
-            title: "AWS Secure Infrastructure with VPC, ALB, Auto Scaling",
-            description:
-                "Designed a secure, high-availability AWS architecture using public/private subnets, NAT Gateway, ALB, Auto Scaling Groups, and CloudWatch alarms. Implemented full IAM hardening.",
-            image: "/projects/devops-4.webp",
-            technologies: ["AWS VPC", "EC2", "ALB", "ASG", "IAM", "CloudWatch"],
-            github: "#",
-            demo: "#"
-        },
-
-        {
-            id: 6,
-            title: "Backup & Disaster Recovery Automation",
-            description:
-                "Automated EBS snapshot lifecycle, AMI creation, S3 backup workflows, and monitoring alerts using Bash/Python. Reduced manual backup effort by 70%.",
-            image: "/projects/devops-5.webp",
-            technologies: ["AWS S3", "EBS", "Python", "Bash", "CloudWatch", "Lifecycle Manager"],
-            github: "#",
-            demo: "#"
-        }
+      
     ],
 
     // -------------------------
